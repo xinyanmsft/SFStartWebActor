@@ -3,6 +3,7 @@ using Owin;
 using Microsoft.Owin.StaticFiles;
 using Microsoft.Owin;
 using Microsoft.Owin.FileSystems;
+using System.Fabric;
 
 namespace Application1.Gateway
 {
@@ -10,12 +11,13 @@ namespace Application1.Gateway
     {
         // This code configures Web API. The Startup class is specified as a type
         // parameter in the WebApp.Start method.
-        public static void ConfigureApp(IAppBuilder appBuilder)
+        public static void ConfigureApp(IAppBuilder appBuilder, ServiceContext serviceContext)
         {
             appBuilder.Use(typeof(ServiceMiddleware));
 
             // Configure Web API for self-host. 
             HttpConfiguration config = new HttpConfiguration();
+            config.Filters.Add(new GatewayExceptionFilterAttribute(serviceContext));
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

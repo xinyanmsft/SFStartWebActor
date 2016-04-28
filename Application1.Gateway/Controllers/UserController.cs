@@ -2,13 +2,15 @@
 using Microsoft.ServiceFabric.Actors;
 using Microsoft.ServiceFabric.Actors.Client;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace Application1.Gateway.Controllers
 {
+    /// <summary>
+    /// Redirect HTTP requests to actors.
+    /// </summary>
     public class UserController : ApiController
     {
         public async Task<UserInfo> Get(int id)

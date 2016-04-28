@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Application1", "Application1\Application1.sfproj", "{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}"
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Application1", "Application1\Application1.FabricApplication.sfproj", "{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application1.Gateway", "Application1.Gateway\Application1.Gateway.csproj", "{75229319-BB16-49CB-ACF5-E3CAB80D59B7}"
 EndProject
@@ -14,7 +14,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{E39DFE75-B73F-4611-91EA-4D83C45619DD}"
 	ProjectSection(SolutionItems) = preProject
 		Tools\Setup_AppInsights.ps1 = Tools\Setup_AppInsights.ps1
-		Tools\Setup_CI_CD_VSO.ps1 = Tools\Setup_CI_CD_VSO.ps1
+		Tools\Setup_CI_CD_VSTS.ps1 = Tools\Setup_CI_CD_VSTS.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C924E0D-EBCF-4BB8-951C-25FD1BF8A5F8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
