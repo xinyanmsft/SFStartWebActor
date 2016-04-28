@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Application1", "Application1\Application1.sfproj", "{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application1.Gateway", "Application1.Gateway\Application1.Gateway.csproj", "{75229319-BB16-49CB-ACF5-E3CAB80D59B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application1.UserActor", "Application1.UserActor\Application1.UserActor.csproj", "{6E9069F0-ED9E-4CF9-B558-5F7FDA9E1B2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application1.UserActor.Interfaces", "Application1.UserActor.Interfaces\Application1.UserActor.Interfaces.csproj", "{22428BAB-E3FB-46CA-B159-C7C7F4DA8EBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{E39DFE75-B73F-4611-91EA-4D83C45619DD}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\Setup_AppInsights.ps1 = Tools\Setup_AppInsights.ps1
+		Tools\Setup_CI_CD_VSO.ps1 = Tools\Setup_CI_CD_VSO.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}.Debug|x64.ActiveCfg = Debug|x64
+		{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}.Debug|x64.Build.0 = Debug|x64
+		{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}.Debug|x64.Deploy.0 = Debug|x64
+		{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}.Release|x64.ActiveCfg = Release|x64
+		{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}.Release|x64.Build.0 = Release|x64
+		{328ECCC1-C1DE-4CB4-8C46-78D1214ED311}.Release|x64.Deploy.0 = Release|x64
+		{75229319-BB16-49CB-ACF5-E3CAB80D59B7}.Debug|x64.ActiveCfg = Debug|x64
+		{75229319-BB16-49CB-ACF5-E3CAB80D59B7}.Debug|x64.Build.0 = Debug|x64
+		{75229319-BB16-49CB-ACF5-E3CAB80D59B7}.Release|x64.ActiveCfg = Release|x64
+		{75229319-BB16-49CB-ACF5-E3CAB80D59B7}.Release|x64.Build.0 = Release|x64
+		{6E9069F0-ED9E-4CF9-B558-5F7FDA9E1B2A}.Debug|x64.ActiveCfg = Debug|x64
+		{6E9069F0-ED9E-4CF9-B558-5F7FDA9E1B2A}.Debug|x64.Build.0 = Debug|x64
+		{6E9069F0-ED9E-4CF9-B558-5F7FDA9E1B2A}.Release|x64.ActiveCfg = Release|x64
+		{6E9069F0-ED9E-4CF9-B558-5F7FDA9E1B2A}.Release|x64.Build.0 = Release|x64
+		{22428BAB-E3FB-46CA-B159-C7C7F4DA8EBA}.Debug|x64.ActiveCfg = Debug|x64
+		{22428BAB-E3FB-46CA-B159-C7C7F4DA8EBA}.Debug|x64.Build.0 = Debug|x64
+		{22428BAB-E3FB-46CA-B159-C7C7F4DA8EBA}.Release|x64.ActiveCfg = Release|x64
+		{22428BAB-E3FB-46CA-B159-C7C7F4DA8EBA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
